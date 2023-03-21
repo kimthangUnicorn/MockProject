@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../regisPackage.css">
+</head>
+<body>
+    <div class="container">
+        <form  th:action="@{/savePack}"  method="post">
+            <div class="header">
+                <p>ADD PACKAGE</p>
+            </div>
+            <div class="body">
+                <div class="ip">
+                    Package Name    
+                    <input type="text" placeholder="Input Name package" name="packageName">
+                </div>
+                <div class="ip">
+                    Package price
+                    <input type="text" placeholder="Input price " name="price">
+                </div>
+                <div class="ip">
+                    Time
+                    <input type="text" placeholder="Input Time to use" name="time">
+                </div>
+                <div class="ip">
+                    Package Descript
+                    <input type="text" placeholder="Input Descript" name="descript">
+                </div>
+            </div>
+            <div class="footer">
+                <button type="submit">ADD</button>
+            </div>
+
+        </form>
+        
+    </div>
+</body>
+</html>

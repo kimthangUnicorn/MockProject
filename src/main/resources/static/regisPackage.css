@@ -1,0 +1,45 @@
+.container{
+  width: 30%;
+  height: 56%;
+  position: absolute;
+  border-radius:20px ;
+  background-color:aliceblue;
+  left: 35%;
+  font-family: 'Times New Roman', Times, serif;
+}
+.header{
+    background-color: rgb(81, 129, 232);
+    height: 35px;
+    padding-left: 15px;
+    text-align: center;
+    border-radius:10px ;
+}
+.header p{
+    margin-top: 0px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.body .ip{
+    width: 300px;
+    height:38px;
+    padding: 18px;
+}
+.ip input{
+   border: solid gainsboro;
+   width: 350px;
+   padding-top:8px ;
+   border-radius: 10px;
+   font-family: 'Times New Roman', Times, serif;
+}
+.footer{
+    height:100px;
+    padding: 10px;
+    text-align: center;
+}
+.footer button{
+   background-color: rgb(56, 136, 222);
+   border: none;
+   width: 100px;
+   height:35px;
+   border-radius: 50px;
+}

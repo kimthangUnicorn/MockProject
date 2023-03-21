@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vn">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link rel="stylesheet" type="text/css" href="../authen.css">
+</head>
+
+<body>
+	<form action="" th:action="@{/saveUser}" th:object="${user}" method="post">
+		<div class="container">
+			<h1>Đăng Ký</h1>
+			<p>Xin hãy nhập biểu mẫu bên dưới để đăng ký.</p>
+			<hr>
+			<label for="email"><b>Fullname</b></label>
+			<input type="text" placeholder="Nhập fullname" name="fullname" th:field="*{fullname}" required>
+
+			<label for="email"><b>Email</b></label>
+			<input type="text" placeholder="Nhập Email" name="email" th:field="*{email}" required>
+
+			<label for="psw"><b>Mật Khẩu</b></label>
+			<input type="password" placeholder="Nhập Mật Khẩu" name="password" th:field="*{password}" required>
+
+
+			<label>
+				<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Nhớ Đăng Nhập
+			</label>
+
+			<div class="clearfix">
+				<button type="submit" class="signupbtn">Sign Up</button>
+			</div>
+			<span class="psw"> <a href="/">Click here to
+				Login </a>
+		</span>
+		</div>
+	</form>
+</body>
+
+</html>
